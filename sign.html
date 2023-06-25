@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is my first html project after learning html">
+    <meta name="name" content="Henry Ighedosa">
+    <title>sign in</title>
+    <link rel="icon" href="img/html5.png" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <h1>SIGN-IN / LOG IN</h1>
+
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/#about">ABOUT JEFF'S HOME</a></li>
+            <li><a href="help.html">HELP CENTER</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+
+        </ul>
+    </nav>
+
+    <figure>
+            <img src="img/jf6.jpg" alt=""
+            width="500" height="300">
+            <figcaption>
+                <a href="/#address">location</a>
+            </figcaption>
+    </figure>
+
+    
+
+</header>
+
+<main>
+    <form action="https://httpbin.org/get" method="get">
+
+        <fieldset>
+            <legend>PERSONAL INFO:</legend>
+
+            <div>
+                <label for="FN">First Name:</label>
+                <input type="text" name="firstname" id="FN" placeholder="Jeff" autocomplete="on" required autofocus>
+            </div>
+
+            <div>
+                <label for="LN">Last Name:</label>
+                <input type="text" name="lastname" id="LN" placeholder="Paul" autocomplete="on" required>
+            </div>
+
+            <div>
+                <label for="age">age:</label>
+                <input type="number" name="age" id="age" autocomplete="on" min="18" max="90" value="18" step="1">
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" autocomplete="on" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone"
+                pattern="[0-9]{11}" placeholder="080-231-9999">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="your secret">
+            </div>
+
+        </fieldset>
+
+        <br>
+        <hr>
+
+        <fieldset>
+            <legend>FUN PACKS AREAS</legend>
+            <label for="coffee">drinks</label>
+            <input type="text" name="coffee" id="coffee" list="coffee...list">
+            <datalist id="coffee...list">
+
+                <option value="drinks">
+                <option value="tea">
+                <option value="latte">
+                <option value="pap">
+                <option value="custard">
+                <option value="other...drinks">
+
+            </datalist>
+
+            <br>
+            <hr>
+
+            <p>
+                <input type="radio" name="areas" id="mega" value="mega">
+                <label for="mega">Mega chicken</label>
+
+            </p>
+
+            <p>
+                <input type="radio" name="areas" id="thep" value="thep">
+                <label for="thep">the place</label>
+
+            </p>
+
+            <p>
+                <input type="radio" name="areas" id="lcc" value="lcc">
+                <label for="lcc">lekki Consevation</label>
+
+            </p>
+
+            <p>
+                <input type="radio" name="areas" id="chevron" value="chevron">
+                <label for="chevron">Chevron Nigeria limited</label>
+
+            </p>
+
+        <br>
+        <hr>
+
+            <p>
+                <input type="checkbox" name="areas" id="gc" value="gc">
+                <label for="gc">Grand Cinemas</label>
+
+            </p>
+
+            <p>
+                <input type="checkbox" name="areas" id="filmhouse" value="filmhouse">
+                <label for="filmhouse">filmhouse cinemas</label>
+
+            </p>
+
+            <p>
+                <input type="checkbox" name="areas" id="ebano" value="ebano">
+                <label for="ebano">PRINCE EBEANO SUPERMARKET</label>
+
+            </p>
+
+            <p>
+                <input type="checkbox" name="areas" id="GNC" value="GNC">
+                <label for="GNC">GRAVITY NIGHT CLUB</label>
+
+            </p>
+
+
+        </fieldset>
+        <br>
+
+        <Fieldset>
+            <Legend>PLEASE LEAVE A MESSAGE</Legend>
+            <label for="message">leave your message</label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here, we would love to read it......"></textarea>
+        </Fieldset>
+
+        <br>
+        <button type="reset">rest</button>
+        <button type="submit">sign up</button>
+
+
+    </form>
+
+</main>
+
+<br>
+
+
+<footer>
+   <div>&copy;2023 JEFF'S HOME.</div> 
+   <div><a href="#">Terms.</a> <a href="#">Sitemap</a> <a href="#">Privacy.</a> <a href="#">Your Privacy Choices</a></div>
+</footer>
+
+    
+</body>
+
+</html>
